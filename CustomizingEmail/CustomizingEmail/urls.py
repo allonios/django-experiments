@@ -18,7 +18,7 @@ from django.urls import path
 from django.conf.urls import url, include
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    url(r'testmail/',include('SendMail.urls')),
-    url(r'^accounts/', include('allauth.urls')),
+    path("admin/", admin.site.urls),
+    url(r"testmail/", include("SendMail.urls")),
+    url(r"^accounts/", include("allauth.urls")),
 ]
